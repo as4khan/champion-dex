@@ -1,0 +1,19 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react",             // Ensure JSX is set to react
+    "target": "es5",            // Target modern JavaScript version
+    "lib": ["dom", "esnext"],   // Include DOM and modern JavaScript libraries
+    "moduleResolution": "node", // Node module resolution
+    "allowSyntheticDefaultImports": true, // Allow default imports
+    "esModuleInterop": true,    // Allow ES module interop
+    "skipLibCheck": true,       // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+    "noEmit": true,             // Do not emit compiled output
+    "isolatedModules": true,    // Isolate modules for faster builds
+    "resolveJsonModule": true   // Include JSON modules
+  },
+  "include": ["src"],            // Include the src directory
+  "exclude": ["node_modules"]    // Exclude node_modules
+}
